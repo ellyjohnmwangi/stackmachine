@@ -3,10 +3,9 @@ from inputs import Inputs
 
 #GATHERING INPUTS
 myStack = StackOperations()
-myoperations = Inputs()
-str = input("enter your string here, separate your words using whitespace: ")
+str = str.upper(input("enter your string here, separate your words using whitespace: "))
 split = str.split()
-
+print(str)
 
 #OPERATIONAL FUNCTIONS
 def pop():
@@ -23,38 +22,17 @@ for item in split:
     try:
         int_value = int(item)
     except ValueError:
-        if item=="dup":
+        if item=="DUP":
             dup()
-        elif item =="pop":
+        elif item =="POP":
             pop()
-        # elif item=="+":
-        #     myStack.push(pop()+pop())
-
-        #     add()
-        # elif item=="-":
-            # myStack.sub()
+        elif item=="+":
+           add()
+        elif item=="-":
+            sub()
         else :
-            print("Your string of operations contain unknown {}: ")
+            print("Your string of operations contain unknown please double check :" +item)
     else:
         myStack.push(item)
-for word in str:
-    if word == "add":
-        add()
-    elif word == "sub":
-        sub()
 
-
-print(myStack.get_stack())
-
-# for item in myoperations.get_inputs():
-#     if
-#     if pushUp:
-#         myStack.push(word)
-#         pushUp = False
-#     elif word == "push":
-#         pushUp= True
-#     else:
-#        try:
-#             operation[word]()
-#        except KeyError:
-#             continue
+print( myStack.get_stack())
