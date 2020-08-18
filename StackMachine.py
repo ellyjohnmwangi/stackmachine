@@ -17,4 +17,4 @@ class StackOperations():
     def add(self):
         return int(self.pop())+int(self.pop())
     def sub(self):
-        return int(self.items[-2])-int(self.pop())
+        return int(self.pop())-int(self.pop())
