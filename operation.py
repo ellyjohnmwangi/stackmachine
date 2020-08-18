@@ -8,6 +8,7 @@ split = str.split()
 print(str)
 
 #OPERATIONAL FUNCTIONS
+#TODO why do you have these functions redefined in this module while they already exist in StackMachine
 def pop():
     myStack.pop()
 def sub():
@@ -22,7 +23,7 @@ for item in split:
     try:
         int_value = int(item)
     except ValueError:
-        if item=="DUP":
+        if item=="DUP":  #TODO are you considering case sensitivity in this comparision
             dup()
 
         elif item =="POP":
