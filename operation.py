@@ -24,15 +24,19 @@ for item in split:
     except ValueError:
         if item=="DUP":
             dup()
+            print( myStack.get_stack())
         elif item =="POP":
             pop()
+            print( myStack.get_stack())
         elif item=="+":
-           add()
+            add()
+            print( myStack.get_stack())
         elif item=="-":
             sub()
+            print( myStack.get_stack())
         else :
             print("Your string of operations contain unknown please double check :" +item)
     else:
         myStack.push(item)
-
+        print( myStack.get_stack())
 print( myStack.get_stack())
