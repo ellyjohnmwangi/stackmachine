@@ -28,6 +28,8 @@ for item in split:
         else :
             print("Your string of operations contain unknown please double check :" +item)
     else:
+        if int(item) >  2**(20-1):
+            raise Exception('Sorry your input: '+item +' is above range.')
         myStack.push(item)
 
 print( myStack.get_stack())
