@@ -25,3 +25,7 @@ class StackOperations():
 
     def sub(self):
         return int(self.pop()) - int(self.pop())
+
+    # TODO what if data type you retrieve from the stack is not what you want
+    # TODO do not ignore IDE warnings...
+

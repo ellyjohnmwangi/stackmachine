@@ -1,35 +1,36 @@
 from StackMachine import StackOperations
 from inputs import Inputs
 
-#GATHERING INPUTS
+#TODO do not igore pep8 formatting warnings. there is a lot of warnings in your code on bad formatting
+
+# GATHERING INPUTS
 myStack = StackOperations()
-str = str.upper(input("enter your string here, separate your words using whitespace: "))
+str = str.upper(input("enter your string here, separate your words using whitespace: ")) #TODO str???
 split = str.split()
 print(str)
-#TODO why do you have these functions redefined in this module while they already exist in StackMachine
 
-#CHECKLOOP
+# CHECKLOOP
 for item in split:
     try:
-        int_value = int(item)
+        int_value = int(item) #TODO where is this int_value being used?
     except ValueError:
-        if item=="DUP":  #TODO are you considering case sensitivity in this comparision
-            myStack.push(myStack.dup())
+        if item == "DUP":
+            myStack.push(myStack.dup()) #TODO changes in
 
-        elif item =="POP":
+        elif item == "POP":
             myStack.pop()
 
-        elif item=="+":
-            myStack.push(myStack.add())
+        elif item == "+":
+            myStack.push(myStack.add()) #TODO complex code
 
-        elif item=="-":
-            myStack.push(myStack.sub())
+        elif item == "-":
+            myStack.push(myStack.sub()) #TODO complex code
 
-        else :
-            print("Your string of operations contain unknown please double check :" +item)
+        else:
+            print("Your string of operations contain unknown please double check :" + item)
     else:
-        if int(item) >  2**(20-1):
-            raise Exception('Sorry your input: '+item +' is above range.')
+        if int(item) > 2 ** (20 - 1): #TODO is this how you do power in python. do not reinvent wheel
+            raise Exception('Sorry your input: ' + item + ' is above range.')
         myStack.push(item)
 
-print( myStack.get_stack())
+print(myStack.get_stack())
