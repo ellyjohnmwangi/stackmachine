@@ -10,9 +10,13 @@ Recognized input:
   '-'           (pops the top most two numbers off stack, subtracts them, pushes result to the top of the stack)
 
 All other input is ignored.
+The program does not accept numbers greater than 2^20-1
 Two integers must be on the stack to execute any math operations
 -----------------------------------------------------------------------
 
 Example inputs:
 
-    12 DUP 21 9 POP 32 + 12 DUP 5 17 7 -
+    13 DUP 4 POP 5 DUP + DUP + -
+
+Example output:
+    7
