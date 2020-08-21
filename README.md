@@ -13,10 +13,8 @@ Recognized input:
     DUP:        pops first two numbers off stack, multiplies them pushes result to top of stack
     +:          pops the top most two numbers off stack, adds them, pushes result to the top of the stack
     -:          pops the top most two numbers off stack, subtracts them, pushes result to the top of the stack
-    All other input is ignored.
-
+All other input is ignored.
 The program does not accept numbers greater than 2^20-1
-
 Two integers must be on the stack to execute any math operations
 The program outputs the top most number in the stack as the final output.
 -----------------------------------------------------------------------
