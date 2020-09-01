@@ -8,6 +8,7 @@ The sequence of operations is given as a string. Operations are separated by sin
     'DUP': the machine pushes the duplicate of the topmost number in the stack.
     '+': the machine pops the two top most numbers from the stack, adds them together and pushes the sum into the stack.
     '-': the machine pops the two topmost numbers from the stack, subtracts the second one from the first(topmost) and pushes the difference into the stack.
+    
 After processing of all the operations, the machine returns the topmost number from the stack. The machine processes 20-bit unsigned integers(numbers from 0-2^20-1). An overflow in addition or an underflow in subtraction causes an error.
 The machine also reports an error when it tries to perform an operation that requires more numbers on the stack than the stack actually contains. Also if after performing the operation the stack is empty, the machine reports an error.
 -----------------------------------------------------------------------
