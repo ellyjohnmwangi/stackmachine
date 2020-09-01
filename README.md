@@ -1,9 +1,8 @@
 Simple word machine created in python3.
 -----------------------------------------------------------------------
-
 A word machine is a system that performs a sequence of simple operations on a stack of integers. Initially the stack is empty.
 The sequence of operations is given as a string. Operations are separated by single spaces. The following operations may be specified.
------------------------------------------------------------------------
+
     an integerX(from 0 to 20^20-1): The machine pushes X ionto the machine.
     'POP': the machine removes the topmost number from the stack.
     'DUP': the machine pushes the duplicate of the topmost number in the stack.
