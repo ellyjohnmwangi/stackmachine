@@ -67,15 +67,4 @@ You can clone using the following commands:
     4. clone the git repositpory containing the program files i.e:
             git clone https://github.com/ellyjohnmwangi/stackmachine.git
     The program files will be copied locally in your computer.
-To run the program locally move to the directory containing the program scripts using the cd command
-and run the command.
 
-    python3 operations.py  
-   or drag the file to the command prompt in windows os
-
-Example inputs:
-
-    13 DUP 4 POP 5 DUP + DUP + -
-Expected output:
-
-    10
