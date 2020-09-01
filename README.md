@@ -1,5 +1,6 @@
 Simple word machine created in python3.
 -----------------------------------------------------------------------
+
 A word machine is a system that performs a sequence of simple operations on a stack of integers. Initially the stack is empty.
 The sequence of operations is given as a string. Operations are separated by single spaces. The following operations may be specified.
 -----------------------------------------------------------------------
@@ -9,7 +10,7 @@ The sequence of operations is given as a string. Operations are separated by sin
     '+': the machine pops the two top most numbers from the stack, adds them together and pushes the sum into the stack.
     '-': the machine pops the two topmost numbers from the stack, subtracts the second one from the first(topmost) and pushes the difference into the stack.
 After processing of all the operations, the machine returns the topmost number from the stack. The machine processes 20-bit unsigned integers(numbers from 0-2^20-1). An overflow in addition or an underflow in subtraction causes an error.
-The machine also reports an error when it tries to perfom an operation that requires more numbers on the stack than the stack actually contains. Also if after performing the operation the stack is empty, the machine reports an error.
+The machine also reports an error when it tries to perform an operation that requires more numbers on the stack than the stack actually contains. Also if after performing the operation the stack is empty, the machine reports an error.
 -----------------------------------------------------------------------
 Recognized input:
 -----------------------------------------------------------------------
@@ -33,7 +34,7 @@ For example, given a string "13 DUP 4 POP 5 DUP + DUP + -", the machine performs
      "+"        | add 10 and 10        | 13, 13, 20
      "-"        | subtract 13 from 20  | 13,7
 -----------------------------------------------------------------------
-Finaly, the machine wil return 7.
+Finally, the machine wil return 7.
 
 All other input is ignored.
 The program does not accept numbers greater than 2^20-1
