@@ -8,8 +8,15 @@ The sequence of operations is given as a string. Operations are separated by sin
     'DUP': the machine pushes the duplicate of the topmost number in the stack.
     '+': the machine pops the two top most numbers from the stack, adds them together and pushes the sum into the stack.
     '-': the machine pops the two topmost numbers from the stack, subtracts the second one from the first(topmost) and pushes the difference into the stack.
-After processing of all the operations, the machine returns the topmost number from the stack. The machine processes 20-bit unsigned integers(numbers from 0-2^20-1). An overflow in addition or an underflow in subtraction causes an error.
-The machine also reports an error when it tries to perform an operation that requires more numbers on the stack than the stack actually contains. Also if after performing the operation the stack is empty, the machine reports an error.
+-----------------------------------------------------------------------
+   1.After processing of all the operations, the machine returns the topmost number from the stack.
+   
+   2.The machine processes 20-bit unsigned integers(numbers from 0-2^20-1). An overflow in addition or an underflow in subtraction causes an error.
+   
+   3.The machine also reports an error when it tries to perform an operation that requires more numbers on the stack than the stack actually contains.
+   
+   4.Also if after performing the operation the stack is empty, the machine reports an error.
+   
 -----------------------------------------------------------------------
 Recognized input:
 -----------------------------------------------------------------------
@@ -67,4 +74,46 @@ You can clone using the following commands:
     4. clone the git repositpory containing the program files i.e:
             git clone https://github.com/ellyjohnmwangi/stackmachine.git
     The program files will be copied locally in your computer.
-
+-----------------------------------------------------------------------
+Running the tests
+-----------------------------------------------------------------------
+To run the automated tests, using the terminal or cmd ;
+    
+    1. change directory to the directorate containing the tests.py file.
+    2. run the script using 
+        python3 tests.py
+-----------------------------------------------------------------------
+Deployment
+-----------------------------------------------------------------------
+Stack machine can be used in real life applications in systems such as:
+______________________________________________________________________
+   1. Computer algorithms for
+        (a). remembering partially completed tasks
+        (b). undoing(backtracking from an action)
+   2. when a company wants to reduce its work force it can use stack operations to utilize the slogan "last hired, first hired".
+   3. used to remember racks that one follows when searching through a graph, network or tree.
+   4. back/forward stacks on browsers
+   5. reversing strings.
+----------------------------------------------------------------------
+Built With
+----------------------------------------------------------------------
+This program is built using:
+______________________________________________________________________
+   1. python 3.6
+----------------------------------------------------------------------
+Contributing
+----------------------------------------------------------------------
+When contributing to this repository, please first discuss the change you want to make via email 
+or any other method witg]h the owner of this repository before making any changes.
+----------------------------------------------------------------------
+Pull Request Process
+----------------------------------------------------------------------
+  1. Ensure any install or build dependencies are removed at the end of the layerwhen doing 
+  a build.
+  2. Update the README.md with the details of the changes to the interface, this includes new environment 
+  variables,useful file locations and parameters
+  3. Increase the version number in any examples file and the README,md to the new version 
+  that this pull request would represent.
+  4. You may merger the Pull Request in once you have the sign off of the developer, or ifyou do not have 
+  the permission to do that you may ask the developer to do it for you.
+  
