@@ -7,6 +7,7 @@ split = my_str.split()
 print(my_str)
 
 # CHECK LOOP
+#for item in range(pow(20, 20-1)) #todo... Add this to check the range condition
 for item in split:
     try:
         int_value = int(item)
